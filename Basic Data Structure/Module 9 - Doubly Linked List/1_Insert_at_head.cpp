@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+#define ll long long int
+#define all(x) x.begin(), x.end()
+#define nl '\n'
+#define fastIO() ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+using namespace std;
+#ifndef ONLINE_JUDGE
+// #include "../DebugTemplate/debug.h"
+#else
+#define debug(x...)
+#define dbgsize(x)
+#endif
+
+class Node
+{
+    public:
+    int val;
+    Node *next;
+    Node* prev;
+    Node(int val) {
+        this->val = val;
+        this->next = NULL;
+        this->prev = NULL;
+    }
+};
+
+void print_list(Node* head) {
+    while(head != NULL) {
+        cout<<head->val<<" ";
+        head = head->next;
+    }
+}
+
+void insert_at_head(Node* &head, Node* &tail, int val) {
+    Node* newnode = new Node(val);
+    if (head == NULL) {
+        head = newnode;
+        tail = newnode;
+        return;
+    }
+    newnode->next = head;
+    head->prev = newnode;
+    head = newnode;
+}
+int main()
+{
+    fastIO();
+    Node* head = NULL;
+    Node* tail = NULL;
+    int x;
+    while(true) {
+        cin>>x;
+        if (x == -1) break;
+        insert_at_head(head, tail, x);
+    }
+
+    print_list(head);
+    
+    return 0;
+}

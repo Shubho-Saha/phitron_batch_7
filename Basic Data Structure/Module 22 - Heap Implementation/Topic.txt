@@ -1,0 +1,18 @@
+
+Heap – Lecture Outline
+
+1. Real-Life Applications of Heaps
+
+2. What Is a Heap?
+
+3. Why Do We Need to Implement Heaps?
+
+4. Heap Properties
+
+5. What Is a Complete Binary Tree?
+
+6. Array representation of a complete binary Tree.
+
+7. Insertion in a Max-Heap
+
+8. Deletion from a Max-Heap

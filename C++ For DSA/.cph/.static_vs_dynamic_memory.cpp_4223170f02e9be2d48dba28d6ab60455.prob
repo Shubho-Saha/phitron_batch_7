@@ -1,0 +1,1 @@
+{"name":"Local: static_vs_dynamic_memory","url":"c:\\Users\\Asus1\\Desktop\\My Job\\C++ For DSA\\static_vs_dynamic_memory.cpp","tests":[{"id":1751217811087,"input":"1 2 3 4 5 8\nadaf","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Asus1\\Desktop\\My Job\\C++ For DSA\\static_vs_dynamic_memory.cpp","group":"local","local":true}
